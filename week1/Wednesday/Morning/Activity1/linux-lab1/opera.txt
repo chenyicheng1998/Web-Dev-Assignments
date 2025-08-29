@@ -1,0 +1,51 @@
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1 (main)
+$ mkdir linux-lab1
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1 (main)
+$ ls
+linux-lab1/
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1 (main)
+$ cd linux-lab1/
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1 (main)
+$ mkdir linux-exercises js-exercises
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1 (main)
+$ ls
+js-exercises/  linux-exercises/
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1 (main)
+$ cd linux-exercises
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)      
+$ touch file.txt file2.html file3
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)      
+$ ls
+file.txt  file2.html  file3
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)      
+$ echo "This is file.txt" > file.txt
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)
+$ echo "This is file2.html" > file2.html
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)
+$ echo "This is file3" > file3
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)
+$ cat file.txt
+This is file.txt
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)
+$ cat file2.html
+This is file2.html
+
+cheny@DESKTOP-1R8PB0V MINGW64 ~/Desktop/MetropoliaCourse/Web/Web-Dev-Assignments/week1/Wednesday/Morning/Activity1/linux-lab1/linux-exercises (main)
+$ cat file3
+This is file3
+
+
+
+
