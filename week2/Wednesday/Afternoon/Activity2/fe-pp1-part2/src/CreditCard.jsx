@@ -1,14 +1,10 @@
-import React from 'react'
-
 import visa from "./assets/images/visa.png";
 import masterCard from "./assets/images/master-card.svg";
 
 import "./CreditCard.css"
 
 
-
 const CreditCard = (props) => {
-
   const cardLogo = props.type === "Visa" ? visa : masterCard;
   const maskedNumber = `•••• •••• •••• ${props.number.slice(-4)}`;
   const formattedMonth = props.expirationMonth.toString().padStart(2, "0");
