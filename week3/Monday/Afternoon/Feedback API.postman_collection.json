@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "e9c9d5ed-ba15-464b-ac7b-f3e68b1786e7",
+		"name": "Feedback API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40404419"
+	},
+	"item": [
+		{
+			"name": "Get All Feedbacks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sender\": \"John Smith\",\r\n  \"message\": \"Great session on React components! I found the examples very helpful.\",\r\n  \"rating\": 5\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sender\": \"John Smith\",\r\n  \"message\": \"Great session on React components! I found the examples very helpful.\",\r\n  \"rating\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get feedback by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/feedback/:feedbackId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"feedback",
+						":feedbackId"
+					],
+					"variable": [
+						{
+							"key": "feedbackId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update feedback by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sender\": \"Jane Doe\",\r\n  \"message\": \"The session on React components was very insightful!\",\r\n  \"rating\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/feedback/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"feedback",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete feedback by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/feedback/:feedbackId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"feedback",
+						":feedbackId"
+					],
+					"variable": [
+						{
+							"key": "feedbackId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
