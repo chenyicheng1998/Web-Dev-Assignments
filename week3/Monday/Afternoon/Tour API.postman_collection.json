@@ -1,45 +1,38 @@
 {
 	"info": {
-		"_postman_id": "e9c9d5ed-ba15-464b-ac7b-f3e68b1786e7",
-		"name": "Feedback API",
+		"_postman_id": "6d72eaa6-837c-4554-a23f-f8ef07146224",
+		"name": "Tour API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "40404419"
 	},
 	"item": [
 		{
-			"name": "Get All Feedbacks",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "Get All Tours",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"sender\": \"John Smith\",\r\n  \"message\": \"Great session on React components! I found the examples very helpful.\",\r\n  \"rating\": 5\r\n}"
-				},
 				"url": {
-					"raw": "http://localhost:4000/feedback",
+					"raw": "http://localhost:4000/tours",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"feedback"
+						"tours"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Create a feedback",
+			"name": "Create a Tour",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"sender\": \"John Smith\",\r\n  \"message\": \"Great session on React components! I found the examples very helpful.\",\r\n  \"rating\": 5\r\n}",
+					"raw": "{\r\n  \"name\": \"Best of Paris in 7 Days Tour\",\r\n  \"info\": \"Paris is synonymous with the finest things that culture can offer...\",\r\n  \"image\": \"https://www.course-api.com/images/tours/tour-1.jpeg\",\r\n  \"price\": \"1,995\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -47,33 +40,33 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/feedback",
+					"raw": "http://localhost:4000/tours",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"feedback"
+						"tours"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get feedback by ID",
+			"name": "Get Tour by ID",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/feedback/1",
+					"raw": "http://localhost:4000/tours/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"feedback",
+						"tours",
 						"1"
 					]
 				}
@@ -81,13 +74,13 @@
 			"response": []
 		},
 		{
-			"name": "Update feedback by ID",
+			"name": "Update Tour by ID",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"sender\": \"Jane Doe\",\r\n  \"message\": \"The session on React components was very insightful!\",\r\n  \"rating\": 4\r\n}",
+					"raw": "{\r\n  \"name\": \"Updated Tour Name\",\r\n  \"info\": \"Updated tour information...\",\r\n  \"image\": \"https://www.course-api.com/images/tours/tour-2.jpeg\",\r\n  \"price\": \"2,095\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -95,14 +88,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/feedback/1",
+					"raw": "http://localhost:4000/tours/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"feedback",
+						"tours",
 						"1"
 					]
 				}
@@ -110,19 +103,19 @@
 			"response": []
 		},
 		{
-			"name": "Delete feedback by ID",
+			"name": "Delete Tour by ID",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/feedback/1",
+					"raw": "http://localhost:4000/tours/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"feedback",
+						"tours",
 						"1"
 					]
 				}
