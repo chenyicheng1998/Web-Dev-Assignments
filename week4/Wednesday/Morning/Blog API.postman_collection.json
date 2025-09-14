@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "de55ac20-0b27-4c1e-b3fb-808cbb0b261a",
+		"name": "Blog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40404419"
+	},
+	"item": [
+		{
+			"name": "Get All Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"myTitle\",\r\n  \"body\": \"some body\",\r\n  \"author\": \"good person\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/68c6cfa75e387dafc04e0d22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"68c6cfa75e387dafc04e0d22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"myTitle\",\r\n  \"body\": \"some body\",\r\n  \"author\": \"another good person\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/68c6cfa75e387dafc04e0d22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"68c6cfa75e387dafc04e0d22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/blogs/68c6cfa75e387dafc04e0d22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"blogs",
+						"68c6cfa75e387dafc04e0d22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
