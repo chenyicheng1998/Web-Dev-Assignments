@@ -12,13 +12,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/users/",
+					"raw": "http://localhost:4000/api/users/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						""
 					]
@@ -41,13 +42,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/users/",
+					"raw": "http://localhost:4000/api/users/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
 						""
 					]
@@ -61,15 +63,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/cars/1",
+					"raw": "http://localhost:4000/api/users/68c6d23eb1af424d80bf4576",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"cars",
-						"1"
+						"api",
+						"users",
+						"68c6d23eb1af424d80bf4576"
 					]
 				}
 			},
@@ -90,15 +93,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/users/1",
+					"raw": "http://localhost:4000/api/users/68c6d23eb1af424d80bf4576",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
+						"api",
 						"users",
-						"1"
+						"68c6d23eb1af424d80bf4576"
 					]
 				}
 			},
@@ -110,15 +114,16 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:4000/cars/1",
+					"raw": "http://localhost:4000/api/users/68c6d23eb1af424d80bf4576",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4000",
 					"path": [
-						"cars",
-						"1"
+						"api",
+						"users",
+						"68c6d23eb1af424d80bf4576"
 					]
 				}
 			},
