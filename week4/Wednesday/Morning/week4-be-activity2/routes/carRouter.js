@@ -8,7 +8,7 @@ const {
   deleteCar,
   // patchCar
 } = require("../controllers/carControllers");
-
+ 
 // GET /cars
 router.get("/", getAllCars);
 
