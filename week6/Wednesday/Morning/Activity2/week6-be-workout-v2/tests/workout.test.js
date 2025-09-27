@@ -5,16 +5,36 @@ const api = supertest(app);
 const User = require("../models/userModel");
 const Workout = require("../models/workoutModel");
 const workouts = require("./data/workouts.js");
+const config = require('config');  // 改为 require('config')
+process.env.SECRET = '64bytesofrandomness';
 
 let token = null;
 let createdWorkoutId = null;
 
+// 在测试前连接数据库
 beforeAll(async () => {
+  // 连接数据库
+  await mongoose.connect(config.get('mongoURI'));  // 改为 config.get()
+
+  // 清空测试数据
   await User.deleteMany({});
+  await Workout.deleteMany({});
+
+  // 创建测试用户并获取token
   const result = await api
     .post("/api/user/signup")
     .send({ email: "mattiv@matti.fi", password: "R3g5T7#gh" });
   token = result.body.token;
+});
+
+// 在每个测试用例后清空workout数据
+beforeEach(async () => {
+  await Workout.deleteMany({});
+});
+
+// 测试结束后关闭数据库连接
+afterAll(async () => {
+  await mongoose.connection.close();
 });
 
 describe("workout API endpoints", () => {
